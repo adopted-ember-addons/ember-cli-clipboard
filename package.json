@@ -1,5 +1,5 @@
 {
-  "name": "@aklkv/ember-cli-clipboard",
+  "name": "@adopted-ember-addons/ember-cli-clipboard",
   "version": "1.0.0",
   "description": "An Ember addon that wraps clipboard.js to copy or cut text to the clipboard. A maintained fork of ember-cli-clipboard.",
   "keywords": [
@@ -9,16 +9,16 @@
     "copy",
     "cut"
   ],
-  "homepage": "https://github.com/aklkv/ember-cli-clipboard#readme",
+  "homepage": "https://github.com/adopted-ember-addons/ember-cli-clipboard#readme",
   "bugs": {
-    "url": "https://github.com/aklkv/ember-cli-clipboard/issues"
+    "url": "https://github.com/adopted-ember-addons/ember-cli-clipboard/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aklkv/ember-cli-clipboard.git"
+    "url": "git+https://github.com/adopted-ember-addons/ember-cli-clipboard.git"
   },
   "license": "MIT",
-  "author": "aklkv (https://github.com/aklkv)",
+  "author": "adopted-ember-addons (https://github.com/adopted-ember-addons)",
   "imports": {
     "#src/*": "./src/*"
   },
