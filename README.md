@@ -1,4 +1,4 @@
-# @aklkv/ember-cli-clipboard
+# @adopted-ember-addons/ember-cli-clipboard
 
 A simple Ember wrapper around [clipboard.js](https://clipboardjs.com) for
 copying or cutting text to the clipboard.
@@ -6,7 +6,7 @@ copying or cutting text to the clipboard.
 > **Note:** This is a maintained fork of
 > [ember-cli-clipboard](https://github.com/jkusa/ember-cli-clipboard) by
 > [@jkusa](https://github.com/jkusa), rebuilt as an Embroider v2 addon and
-> published under the `@aklkv` scope. The original package is unmaintained.
+> published under the `@adopted-ember-addons` scope. The original package is unmaintained.
 
 ## Compatibility
 
@@ -16,7 +16,7 @@ copying or cutting text to the clipboard.
 ## Installation
 
 ```shell
-pnpm add @aklkv/ember-cli-clipboard
+pnpm add @adopted-ember-addons/ember-cli-clipboard
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ This addon exposes three public APIs plus a set of test helpers:
 ### `<CopyButton>` component
 
 ```gjs
-import { CopyButton } from '@aklkv/ember-cli-clipboard';
+import { CopyButton } from '@adopted-ember-addons/ember-cli-clipboard';
 
 <template>
   <CopyButton @text="text to copy" @onSuccess={{this.onSuccess}}>
@@ -61,7 +61,7 @@ You must provide either `@text` or `@target`.
 Use the element modifier directly when you don't need the `<CopyButton>` wrapper:
 
 ```gjs
-import { clipboard } from '@aklkv/ember-cli-clipboard';
+import { clipboard } from '@adopted-ember-addons/ember-cli-clipboard';
 
 <template>
   <button
@@ -79,7 +79,7 @@ The modifier accepts the same named arguments as the component (`text`,
 ### `isClipboardSupported` helper
 
 ```gjs
-import { isClipboardSupported } from '@aklkv/ember-cli-clipboard';
+import { isClipboardSupported } from '@adopted-ember-addons/ember-cli-clipboard';
 
 <template>
   {{#if (isClipboardSupported)}}
@@ -106,7 +106,7 @@ Fire a button's `@onSuccess` / `@onError` actions in tests without real
 clipboard access:
 
 ```gjs
-import { triggerCopySuccess, triggerCopyError } from '@aklkv/ember-cli-clipboard/test-support';
+import { triggerCopySuccess, triggerCopyError } from '@adopted-ember-addons/ember-cli-clipboard/test-support';
 
 test('fires success/error actions', async function (assert) {
   await render(

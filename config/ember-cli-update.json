@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectName": "@aklkv/ember-cli-clipboard",
+  "projectName": "@adopted-ember-addons/ember-cli-clipboard",
   "packages": [
     {
       "name": "@ember/addon-blueprint",

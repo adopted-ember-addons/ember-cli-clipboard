@@ -12,7 +12,7 @@ function capitalize(string: string) {
 /**
  *
  * ```gjs live preview no-shadow
- * import { clipboard } from '@aklkv/ember-cli-clipboard';
+ * import { clipboard } from '@adopted-ember-addons/ember-cli-clipboard';
  *
  * const onSuccess = () => {
  *   alert('Text copied to clipboard successfully!');
