@@ -65,18 +65,18 @@ const demo = new Demo();
 
 const installSnippet = highlight(
   `# pnpm
-pnpm add @aklkv/ember-cli-clipboard
+pnpm add @adopted-ember-addons/ember-cli-clipboard
 
 # npm
-npm install @aklkv/ember-cli-clipboard
+npm install @adopted-ember-addons/ember-cli-clipboard
 
 # yarn
-yarn add @aklkv/ember-cli-clipboard`,
+yarn add @adopted-ember-addons/ember-cli-clipboard`,
   'shellscript',
 );
 
 const gettingStartedSnippet = highlight(
-  `import { CopyButton } from '@aklkv/ember-cli-clipboard';
+  `import { CopyButton } from '@adopted-ember-addons/ember-cli-clipboard';
 
 <template>
   <CopyButton @text="text to copy" @onSuccess={{this.onSuccess}}>
@@ -87,7 +87,7 @@ const gettingStartedSnippet = highlight(
 );
 
 const setTextSnippet = highlight(`<CopyButton
-  @text="pnpm add @aklkv/ember-cli-clipboard"
+  @text="pnpm add @adopted-ember-addons/ember-cli-clipboard"
   @onSuccess={{this.onSuccess}}
   @onError={{this.onError}}
 >
@@ -151,7 +151,7 @@ const containerSnippet = highlight(`<dialog open>
 </dialog>`);
 
 const modifierSnippet = highlight(
-  `import { clipboard } from '@aklkv/ember-cli-clipboard';
+  `import { clipboard } from '@adopted-ember-addons/ember-cli-clipboard';
 
 <template>
   <button
@@ -178,7 +178,7 @@ const testSupportSnippet = highlight(
   `import {
   triggerCopySuccess,
   triggerCopyError,
-} from '@aklkv/ember-cli-clipboard/test-support';
+} from '@adopted-ember-addons/ember-cli-clipboard/test-support';
 
 test('fires success/error actions', async function (assert) {
   await render(
@@ -197,10 +197,10 @@ test('fires success/error actions', async function (assert) {
 );
 
 <template>
-  {{pageTitle "@aklkv/ember-cli-clipboard"}}
+  {{pageTitle "@adopted-ember-addons/ember-cli-clipboard"}}
 
   <header class="hero">
-    <h1>@aklkv/ember-cli-clipboard</h1>
+    <h1>@adopted-ember-addons/ember-cli-clipboard</h1>
     <p class="tagline">
       A simple Ember wrapper around
       <a
@@ -213,7 +213,7 @@ test('fires success/error actions', async function (assert) {
     </p>
     <a
       class="github-link"
-      href="https://github.com/aklkv/ember-cli-clipboard"
+      href="https://github.com/adopted-ember-addons/ember-cli-clipboard"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -293,7 +293,7 @@ test('fires success/error actions', async function (assert) {
       <p>Pass a string to <code>@text</code> to copy it on click.</p>
       <CopyButton
         class="btn"
-        @text="pnpm add @aklkv/ember-cli-clipboard"
+        @text="pnpm add @adopted-ember-addons/ember-cli-clipboard"
         @onSuccess={{demo.onSuccess}}
         @onError={{demo.onError}}
         title="copy to clipboard"
@@ -328,7 +328,7 @@ test('fires success/error actions', async function (assert) {
         id="url"
         class="input"
         type="text"
-        value="https://github.com/aklkv/ember-cli-clipboard"
+        value="https://github.com/adopted-ember-addons/ember-cli-clipboard"
         readonly
       />
       <CopyButton
@@ -463,7 +463,7 @@ test('fires success/error actions', async function (assert) {
         and
         <code>triggerCopyError</code>
         from
-        <code>@aklkv/ember-cli-clipboard/test-support</code>
+        <code>@adopted-ember-addons/ember-cli-clipboard/test-support</code>
         so you can fire a button's
         <code>@onSuccess</code>/<code>@onError</code>
         actions in tests without real clipboard access. Pass a CSS selector to
@@ -476,11 +476,11 @@ test('fires success/error actions', async function (assert) {
   <footer class="footer">
     Maintained by
     <a
-      href="https://github.com/aklkv"
+      href="https://github.com/adopted-ember-addons"
       target="_blank"
       rel="noopener noreferrer"
     >
-      @aklkv
+      @adopted-ember-addons
     </a>
     · originally created by
     <a

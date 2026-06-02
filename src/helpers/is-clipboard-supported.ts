@@ -9,7 +9,7 @@ import type Owner from '@ember/owner';
  * # Check If Clipboard Is Supported
  *
  * ```gjs
- * import { isClipboardSupported } from '@aklkv/ember-cli-clipboard';
+ * import { isClipboardSupported } from '@adopted-ember-addons/ember-cli-clipboard';
  *
  * <template>
  *   {{#if (isClipboardSupported)}}

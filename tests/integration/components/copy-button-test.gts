@@ -225,7 +225,7 @@ module('Integration | Component | copy button', function (hooks) {
         <input
           id="url-text"
           type="text"
-          value="https://github.com/aklkv/ember-cli-clipboard"
+          value="https://github.com/adopted-ember-addons/ember-cli-clipboard"
         />
         <CopyButton @target={{getTarget}}>
           Click To Copy
