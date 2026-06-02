@@ -125,7 +125,8 @@
     "pnpm": ">=10"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "ember": {
     "edition": "octane"
