@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@embroider/addon-shim':
         specifier: ^1.10.2
-        version: 1.10.2
+        version: 1.10.3
       clipboard:
         specifier: ^2.0.11
         version: 2.0.11
@@ -766,8 +766,8 @@ packages:
       rollup:
         optional: true
 
-  '@embroider/addon-shim@1.10.2':
-    resolution: {integrity: sha512-EfI9cJ5/3QSUJtwm7x1MXrx3TEa2p7RNgSHefy7fvGm8/DP1xUFL25nST1NaHbHcqR1UhMlrTtv5iUIDoVzeQQ==}
+  '@embroider/addon-shim@1.10.3':
+    resolution: {integrity: sha512-GYbaiC1v9inbiwVg5s+Sd14Jc66NYxg23mEOocgWAZFCtOfhMnRLaLAA6SytW76myVVYImGHX5PFK4PVuH2yng==}
     engines: {node: 12.* || 14.* || >= 16}
 
   '@embroider/compat@4.1.19':
@@ -795,6 +795,10 @@ packages:
 
   '@embroider/shared-internals@3.1.0':
     resolution: {integrity: sha512-DAEB8B0rAHMYnwCPIeYIrZ6uKGEesQx5XqLuO0beqDnZLwsIRcvWSSbpUgOu6nwqXm5EiJiJaTbrHedOSrlR5g==}
+    engines: {node: 12.* || 14.* || >= 16}
+
+  '@embroider/shared-internals@3.1.1':
+    resolution: {integrity: sha512-IlxD8okTt9cRUFpJKD8gTuQUBuEflrhCUju1xZFdYvmGm5XVqHPfG4I6+bEdKb8NO92aqHxr9SYuYibDmpMM9w==}
     engines: {node: 12.* || 14.* || >= 16}
 
   '@embroider/vite@1.7.5':
@@ -4656,6 +4660,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.8.2:
+    resolution: {integrity: sha512-c8jsqUZm3omBOI66G90z1Dyw5z622G8oLG+omfsHBJf3CWQTlOcwOjvOG6wtiNfW6anKm/eA39LMwMtMez2TiQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   send@1.2.1:
     resolution: {integrity: sha512-1gnZf7DFcoIcajTjTwjwuDjzuz4PPcY2StKPlsGAQ1+YH20IRVrBaXSWmdjowTJ6u8Rc01PoYOGHXfP1mYcZNQ==}
     engines: {node: '>= 18'}
@@ -6260,7 +6269,7 @@ snapshots:
   '@ember/test-helpers@5.4.2(@babel/core@7.29.7)(@glint/template@1.7.7)':
     dependencies:
       '@ember/test-waiters': 4.1.1(@babel/core@7.29.7)(@glint/template@1.7.7)
-      '@embroider/addon-shim': 1.10.2
+      '@embroider/addon-shim': 1.10.3
       '@embroider/macros': 1.20.3(@babel/core@7.29.7)(@glint/template@1.7.7)
       '@simple-dom/interface': 1.4.0
       decorator-transforms: 2.3.2(@babel/core@7.29.7)
@@ -6272,7 +6281,7 @@ snapshots:
 
   '@ember/test-waiters@4.1.1(@babel/core@7.29.7)(@glint/template@1.7.7)':
     dependencies:
-      '@embroider/addon-shim': 1.10.2
+      '@embroider/addon-shim': 1.10.3
       '@embroider/macros': 1.20.3(@babel/core@7.29.7)(@glint/template@1.7.7)
     transitivePeerDependencies:
       - '@babel/core'
@@ -6300,12 +6309,12 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@embroider/addon-shim@1.10.2':
+  '@embroider/addon-shim@1.10.3':
     dependencies:
-      '@embroider/shared-internals': 3.1.0
+      '@embroider/shared-internals': 3.1.1
       broccoli-funnel: 3.0.8
       common-ancestor-path: 1.0.1
-      semver: 7.8.1
+      semver: 7.8.2
     transitivePeerDependencies:
       - supports-color
 
@@ -6437,6 +6446,24 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@embroider/shared-internals@3.1.1':
+    dependencies:
+      babel-import-util: 3.0.1
+      debug: 4.4.3
+      ember-rfc176-data: 0.3.18
+      fs-extra: 9.1.0
+      is-subdir: 1.2.0
+      js-string-escape: 1.0.1
+      lodash: 4.18.1
+      minimatch: 3.1.5
+      pkg-entry-points: 1.1.1
+      resolve-package-path: 4.0.3
+      resolve.exports: 2.0.3
+      semver: 7.8.2
+      typescript-memoize: 1.1.1
+    transitivePeerDependencies:
+      - supports-color
+
   '@embroider/vite@1.7.5(@embroider/core@4.6.0(@glint/template@1.7.7))(@glint/template@1.7.7)(vite@8.0.16(@types/node@25.9.1)(jiti@2.6.1)(terser@5.48.0)(yaml@2.9.0))':
     dependencies:
       '@babel/core': 7.29.7
@@ -6529,7 +6556,7 @@ snapshots:
 
   '@glimmer/component@2.1.1':
     dependencies:
-      '@embroider/addon-shim': 1.10.2
+      '@embroider/addon-shim': 1.10.3
       '@glimmer/env': 0.1.7
     transitivePeerDependencies:
       - supports-color
@@ -7226,7 +7253,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.60.0
       debug: 4.4.3
       minimatch: 10.2.5
-      semver: 7.8.1
+      semver: 7.8.2
       tinyglobby: 0.2.17
       ts-api-utils: 2.5.0(typescript@6.0.3)
       typescript: 6.0.3
@@ -8151,7 +8178,7 @@ snapshots:
       '@one-ini/wasm': 0.2.1
       commander: 14.0.3
       minimatch: 10.2.5
-      semver: 7.8.1
+      semver: 7.8.2
 
   ee-first@1.1.1: {}
 
@@ -8244,7 +8271,7 @@ snapshots:
 
   ember-modifier@4.3.0(@babel/core@7.29.7):
     dependencies:
-      '@embroider/addon-shim': 1.10.2
+      '@embroider/addon-shim': 1.10.3
       decorator-transforms: 2.3.2(@babel/core@7.29.7)
     transitivePeerDependencies:
       - '@babel/core'
@@ -8252,7 +8279,7 @@ snapshots:
 
   ember-page-title@9.0.3:
     dependencies:
-      '@embroider/addon-shim': 1.10.2
+      '@embroider/addon-shim': 1.10.3
       '@simple-dom/document': 1.4.0
     transitivePeerDependencies:
       - supports-color
@@ -8260,7 +8287,7 @@ snapshots:
   ember-qunit@9.0.4(@babel/core@7.29.7)(@ember/test-helpers@5.4.2(@babel/core@7.29.7)(@glint/template@1.7.7))(@glint/template@1.7.7)(qunit@2.25.0):
     dependencies:
       '@ember/test-helpers': 5.4.2(@babel/core@7.29.7)(@glint/template@1.7.7)
-      '@embroider/addon-shim': 1.10.2
+      '@embroider/addon-shim': 1.10.3
       '@embroider/macros': 1.20.3(@babel/core@7.29.7)(@glint/template@1.7.7)
       qunit: 2.25.0
       qunit-theme-ember: 1.0.0
@@ -8282,7 +8309,7 @@ snapshots:
   ember-source@7.0.0(@glimmer/component@2.1.1):
     dependencies:
       '@babel/core': 7.29.7
-      '@embroider/addon-shim': 1.10.2
+      '@embroider/addon-shim': 1.10.3
       '@glimmer/component': 2.1.1
       '@simple-dom/interface': 1.4.0
       backburner.js: 2.8.0
@@ -8305,7 +8332,7 @@ snapshots:
 
   ember-strict-application-resolver@0.1.1(@babel/core@7.29.7):
     dependencies:
-      '@embroider/addon-shim': 1.10.2
+      '@embroider/addon-shim': 1.10.3
       decorator-transforms: 2.3.2(@babel/core@7.29.7)
     transitivePeerDependencies:
       - '@babel/core'
@@ -10680,6 +10707,8 @@ snapshots:
 
   semver@7.8.1: {}
 
+  semver@7.8.2: {}
+
   send@1.2.1:
     dependencies:
       debug: 4.4.3
@@ -11172,7 +11201,7 @@ snapshots:
     dependencies:
       growly: 1.3.0
       is-wsl: 2.2.0
-      semver: 7.8.1
+      semver: 7.8.2
       shellwords: 0.1.1
       which: 2.0.2
 
@@ -11274,7 +11303,7 @@ snapshots:
 
   typescript-auto-import-cache@0.3.6:
     dependencies:
-      semver: 7.8.1
+      semver: 7.8.2
 
   typescript-eslint@8.60.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.3):
     dependencies:
@@ -11426,7 +11455,7 @@ snapshots:
   volar-service-typescript@0.0.71(@volar/language-service@2.4.28):
     dependencies:
       path-browserify: 1.0.1
-      semver: 7.8.1
+      semver: 7.8.2
       typescript-auto-import-cache: 0.3.6
       vscode-languageserver-textdocument: 1.0.12
       vscode-nls: 5.2.0
