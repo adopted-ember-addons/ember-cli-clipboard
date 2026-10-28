@@ -1,6 +1,6 @@
 {
   "name": "@adopted-ember-addons/ember-cli-clipboard",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An Ember addon that wraps clipboard.js to copy or cut text to the clipboard. A maintained fork of ember-cli-clipboard.",
   "keywords": [
     "ember-addon",
